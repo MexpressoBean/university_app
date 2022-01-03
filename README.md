@@ -1,24 +1,64 @@
-# README
+<div id="top"></div>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-* Ruby version
+<h3 align="center">University App</h3>
 
-* System dependencies
+  <p align="center">
+    University/school course management web application built while learning fundamentals of Ruby on Rails.
+    <br />
+    <!-- <a href="https://github.com/github_username/repo_name">View Demo</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a> -->
+  </p>
+</div>
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+<br />
 
-* Deployment instructions
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-* ...
+University/school course management web application built while learning fundamentals of Ruby on Rails.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [Ruby on Rails](https://rubyonrails.org/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+
+
+
+### Installation
+
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Kevin Ramirez <br/>
+Email: KevinRamirezCS1997@gmail.com <br/>
+Social: [LinkedIn](https://www.linkedin.com/in/kevin-ramirez-b37326183/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
