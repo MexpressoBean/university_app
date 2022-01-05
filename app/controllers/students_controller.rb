@@ -1,11 +1,11 @@
 class StudentsController < ApplicationController
-    
+    before_action :set_student, only: [:show, :edit, :update]
+
     def index
         @students = Student.all
     end
 
     def show
-        @student = Student.find(params[:id])
     end
 
     def new
@@ -16,14 +16,13 @@ class StudentsController < ApplicationController
         @student = Student.new(student_params)
         if @student.save
             flash[:notice] = "Successfully signed up"
-            redirect_to root_path
+            redirect_to @student
         else
             render 'new'
         end
     end
 
     def update
-        @student = Student.find(params[:id])
         if @student.update(student_params)
         flash[:notice] = "Sucessful update"
         redirect_to @student
@@ -33,11 +32,13 @@ class StudentsController < ApplicationController
     end
 
     def edit
-        @student = Student.find(params[:id])
-
     end
 
     private
+
+    def set_student
+        @student = Student.find(params[:id])
+    end
 
     def student_params
         params.require(:student).permit(:name, :email)
