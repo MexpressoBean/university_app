@@ -4,6 +4,10 @@ class StudentsController < ApplicationController
         @students = Student.all
     end
 
+    def show
+        @student = Student.find(params[:id])
+    end
+
     def new
        @student = Student.new 
     end
@@ -16,6 +20,21 @@ class StudentsController < ApplicationController
         else
             render 'new'
         end
+    end
+
+    def update
+        @student = Student.find(params[:id])
+        if @student.update(student_params)
+        flash[:notice] = "Sucessful update"
+        redirect_to @student
+        else
+            render 'edit'
+        end
+    end
+
+    def edit
+        @student = Student.find(params[:id])
+
     end
 
     private
